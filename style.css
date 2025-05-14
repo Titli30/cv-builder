@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  background-color: #fff;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-left h1 span {
+  color: #3b5bfe;
+}
+
+.hero-left p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero-buttons button {
+  font-size: 16px;
+  padding: 12px 20px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #3b5bfe;
+  color: white;
+}
+
+.secondary-btn {
+  border: 2px solid #333;
+  background: white;
+  color: #111;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.resume-img {
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+
+.person-img {
+  position: absolute;
+  bottom: -30px;
+  right: -40px;
+  width: 140px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Resume Builder Form */
+#resume-builder {
+  padding: 40px 50px;
+  background-color: #f9f9f9;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2e3a59;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.resume-output {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+  display: none;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-left, .hero-right {
+    max-width: 100%;
+  }
+
+  .hero-right {
+    margin-top: 20px;
+  }
+}
